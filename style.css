@@ -57,3 +57,110 @@ body{
 .set1choosenred{
     transform: translateX(380%);
 }
+
+/* Media Queries for Responsive Design */
+@media screen and (max-width: 768px) {
+  .set2choosenyellow{
+    transform: translate(-200%,100%);
+  }
+  .set2choosengreen{
+    transform: translate(-200%,-100%);
+  }
+  .set2choosenred{
+    transform: translateX(-200%);
+  }
+
+  .set1choosenyellow{
+    transform: translate(200%,100%);
+  }
+  .set1choosengreen{
+    transform: translate(200%,-100%);
+  }
+  .set1choosenred{
+    transform: translateX(200%);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .set2choosenyellow{
+    transform: translate(-120%,80%);
+  }
+  .set2choosengreen{
+    transform: translate(-120%,-80%);
+  }
+  .set2choosenred{
+    transform: translateX(-120%);
+  }
+
+  .set1choosenyellow{
+    transform: translate(120%,80%);
+  }
+  .set1choosengreen{
+    transform: translate(120%,-80%);
+  }
+  .set1choosenred{
+    transform: translateX(120%);
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .set2choosenyellow{
+    transform: translate(-80%,60%);
+  }
+  .set2choosengreen{
+    transform: translate(-80%,-60%);
+  }
+  .set2choosenred{
+    transform: translateX(-80%);
+  }
+
+  .set1choosenyellow{
+    transform: translate(80%,60%);
+  }
+  .set1choosengreen{
+    transform: translate(80%,-60%);
+  }
+  .set1choosenred{
+    transform: translateX(80%);
+  }
+}
+
+/* Responsive H1 Styles */
+@media screen and (max-width: 768px) {
+  h1[style*="position: absolute;top: 10px"] {
+    font-size: 28px !important;
+    padding: 4px 12px !important;
+    letter-spacing: 1.5px !important;
+  }
+  
+  h1.display {
+    font-size: 36px !important;
+    letter-spacing: 1.5px !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h1[style*="position: absolute;top: 10px"] {
+    font-size: 24px !important;
+    padding: 3px 10px !important;
+    letter-spacing: 1px !important;
+  }
+  
+  h1.display {
+    font-size: 30px !important;
+    letter-spacing: 1px !important;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  h1[style*="position: absolute;top: 10px"] {
+    font-size: 20px !important;
+    padding: 2px 8px !important;
+    letter-spacing: 0.5px !important;
+  }
+  
+  h1.display {
+    font-size: 26px !important;
+    letter-spacing: 0.5px !important;
+  }
+}
