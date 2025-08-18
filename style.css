@@ -164,3 +164,35 @@ body{
     letter-spacing: 0.5px !important;
   }
 }
+.scoreboard {
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 40px;
+    z-index: 10;
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    background: rgba(153, 45, 255, 0.8);
+    border-radius: 20px;
+    padding: 10px 30px;
+    margin-top: 10px;
+}
+.score {
+    min-width: 120px;
+    text-align: center;
+}
+@media screen and (max-width: 600px) {
+    .scoreboard {
+        font-size: 16px;
+        padding: 8px 10px;
+        gap: 10px;
+        top: 120px;
+        border-radius: 12px;
+    }
+    .score {
+        min-width: 80px;
+    }
+}

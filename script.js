@@ -101,3 +101,62 @@ function compare() {
     console.log("you win");
   }
 }
+
+let playerScore = 0;
+let computerScore = 0;
+const playerScoreElem = document.getElementById('player-score');
+const computerScoreElem = document.getElementById('computer-score');
+
+// ...existing code...
+
+function compare() {
+  if (elem.className.slice(0, 3) == elem2.className.slice(0, 3)) {
+    setTimeout(()=>{
+      display.innerText = 'DRAW'
+      display.style.color='rgba(255, 255, 0, 1)'
+    },1000)
+    // No score change for draw
+  } else if (elem.className.slice(0, 3) =='red' && elem2.className.slice(0, 3)=='yel') {
+    setTimeout(()=>{
+      display.innerText = 'YOU WIN'
+      display.style.color='rgba(0, 255, 0, 1)'
+      playerScore++;
+      playerScoreElem.textContent = playerScore;
+    },1000)
+  } else if (elem.className.slice(0, 3) =='red' && elem2.className.slice(0, 3)=='gre') {
+    setTimeout(()=>{
+      display.innerText = 'YOU LOSE'
+      display.style.color='rgba(255, 0, 0, 1)'
+      computerScore++;
+      computerScoreElem.textContent = computerScore;
+    },1000)
+  } else if (elem.className.slice(0, 3) =='yel' && elem2.className.slice(0, 3)=='red') {
+    setTimeout(()=>{
+      display.innerText = 'YOU LOSE'
+      display.style.color='rgba(255, 0, 0, 1)'
+      computerScore++;
+      computerScoreElem.textContent = computerScore;
+    },1000)
+  } else if (elem.className.slice(0, 3) =='yel' && elem2.className.slice(0, 3)=='gre') {
+    setTimeout(()=>{
+      display.innerText = 'YOU WIN'
+      display.style.color='rgba(0, 255, 0, 1)'
+      playerScore++;
+      playerScoreElem.textContent = playerScore;
+    },1000)
+  } else if (elem.className.slice(0, 3) =='gre' && elem2.className.slice(0, 3)=='yel') {
+    setTimeout(()=>{
+      display.innerText = 'YOU LOSE'
+      display.style.color='rgba(255, 0, 0, 1)'
+      computerScore++;
+      computerScoreElem.textContent = computerScore;
+    },1000)
+  } else if (elem.className.slice(0, 3) =='gre' && elem2.className.slice(0, 3)=='red') {
+    setTimeout(()=>{
+      display.innerText = 'YOU WIN'
+      display.style.color='rgba(0, 255, 0, 1)'
+      playerScore++;
+      playerScoreElem.textContent = playerScore;
+    },1000)
+  }
+}
