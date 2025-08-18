@@ -32,7 +32,7 @@ elements.forEach(function (element) {
 });
 
 function start() {
-  let rand = Math.round(Math.random() * 2);
+  let rand = Math.floor(Math.random() * 2.99);
   let ele = elements2[rand];
   elem2 = ele;
   if (ele.className == "red element") {
